@@ -1,0 +1,7 @@
+<%= form_for @phone_number do |f| %>
+  <%= f.label :number  %>
+  <%= f.text_field :number  %>
+  <%= f.hidden_field :person_id  %>
+
+  <%= f.submit 'Create phone number', class: 'btn btn-primary'  %>
+<% end %>
